@@ -1,5 +1,6 @@
 header{
-  margin-top: -150px;
+  margin-top: 0px;
+  margin-left: 70px;
 }
 
 .dws-menu{
@@ -19,11 +20,9 @@ header{
 
 .dws-menu > ul li a{
 display: block;
-background: rgba(30, 52, 142, 0.5);
-border: 1px solid #fff;
 padding: 50;
-font-size: 14px;
-color: #fff;
+font-size: 24px;
+color: #000;
 text-decoration: none;
 text-transform: uppercase;
 transition: all 1s ease;
@@ -32,15 +31,15 @@ transition: all 1s ease;
 .dws-menu > ul li{
   position: relative;
   font-size: 15px;
-  border-right: 1px solid #c7c8ca;
+  
 }
 
 .dws-menu > ul li:first-child{
-  border-left: 1px solid #b2bbbb;
+  
 }
 
 .dws-menu > ul li:last-child{
-  border-right: 1px solid #b2bbbb;
+  
 }
 
 .dws-menu li a:hover{
@@ -56,7 +55,7 @@ transition: all 1s ease;
 }
 
 .dws-menu li > ul li{
-  border: 1px solid #fff;
+
 }
 
 .dws-menu li > ul li a{
@@ -71,21 +70,24 @@ transition: all 1s ease;
 }
 
 #img{
-  margin-left: 0px;
+  width: 225px;
+  height: 225px;
+  margin-left: -200px;
 }
 
 .sbs{
-  margin-left: 700px;
+  text-align: center;
   margin-top: 100px;
   color: #000;
   font-size: 100px;
 }
 
 .home{
-  background-image: url(https://thumbs.dreamstime.com/x/%D0%B2%D0%B5%D1%81-%D0%B3%D0%B0%D0%BD%D1%82%D0%B5%D0%BB%D0%B8-%D1%8D%D1%81%D0%BA%D0%B8%D0%B7%D0%B0-26513647.jpg);
-  background-size: cover;
+  /*background-image: url(http://dryerebakan.com/wp-content/uploads/Foods-that-turn-back-the-clock.jpg);
+  background-size: cover;*/
   height: 600px;  
   width: 100%;
+  margin-top: 0px;
 }
 
 hr {
@@ -95,9 +97,9 @@ hr {
     color: #000;
     height: 5px; 
     margin-left: 50px;
-   }
+}
 
-   .line  {
+.line  {
  border-top: 7px dashed #000; /* Параметры линии */
  height: 28px; /* Высота блока */
  background: url(images/scissors.png) no-repeat 10px -18px; /* Параметры фона */
@@ -105,12 +107,13 @@ hr {
 }
 
 .w-1{
-  margin-left: 650px;
+  text-align: center;
   font-size: 75px;
 }
 
 .w-2{
   margin-left: 1000px;
+  margin-top: 100px;
 }
 
 .w-3{
@@ -222,3 +225,53 @@ hr {
     height: 600px;
     margin-left: 500px;
   }
+
+  .h-1{
+  margin-top: -25px;
+}
+
+#slider {
+  overflow: hidden;
+  width: 100%;
+  height:700px;
+}
+
+.container {
+  width: 500%;
+  transition-duration: 3s;
+}
+
+.slide div {
+  position: relative;
+}
+
+.slide {
+  float:left;
+  width: 20%;
+  height:700px;
+}
+
+.slide .text {
+  position: absolute;
+  font-size: 45px;
+  top: 50%;
+  width:100%;
+  height: 700px;
+  text-align: center;
+  color: white;
+}
+
+.slide1{
+  background-image: url(http://previews.123rf.com/images/pozitiw/pozitiw1210/pozitiw121000152/15832090-Sketch-dumbbell-weight-Stock-Photo.jpg);
+  background-size: cover;
+}
+
+.slide2{
+  background-image: url(https://previews.123rf.com/images/pozitiw/pozitiw1210/pozitiw121000143/15832124-Sketch-dumbbell-weight-Stock-Photo.jpg);
+  background-size: cover;
+}
+
+.slide3{
+  background-image: url(https://previews.123rf.com/images/pozitiw/pozitiw1210/pozitiw121000143/15832124-Sketch-dumbbell-weight-Stock-Photo.jpg);
+  background-size: cover;
+}

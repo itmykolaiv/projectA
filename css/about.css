@@ -1,4 +1,5 @@
 header{
+
   margin-left: 70px;
 }
 
@@ -69,10 +70,10 @@ transition: all 1s ease;
 }
 
 .sbs{
-  text-align: center;
-  margin-top: 0px;
+  margin-top: 300px;
   color: #fff;
-  font-size: 85px;
+  font-size: 95px;
+  text-align: center;
 }
 
 .home{
@@ -89,41 +90,48 @@ hr {
     background-color: #fff; 
     color: #fff;
     height: 5px; 
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .line  {
  border-top: 7px dashed #fff; /* Параметры линии */
  height: 28px; /* Высота блока */
  background: url(images/scissors.png) no-repeat 10px -18px; /* Параметры фона */
- margin-top: 125px;
+ margin-top: 100px;
 }
 
 .hth{
   margin-top: 100px;
-  margin-left: 850px;
-  font-size: 85px;
+  margin-left: 100px;
+  font-size: 65px;
+}
+
+.tex{
+  width: 700px;
+  margin-left: 1200px;
+  font-size: 45px;
 }
 
 #oml{
-  width: 800px;
-  height: 4s00px;
+  width: 500px;
+  height: 300px;
   transform: rotate(-25deg);
   margin-left: 200px;
-  margin-top: -400px;
+  margin-top: -300px;
 }
 
 #img{
   width: 225px;
   height: 225px;
   margin-left: -200px;
-  
 }
 
-.tex{
-  width: 900px;
-  font-size: 65px;
-  margin-left: 1200px;
+.a1{
+  background: blue;
+  margin-top: 200px;
+  height: 200px;
+  font-size: 150px;
+  text-align: center;
 }
 
 .h-1{
@@ -138,7 +146,7 @@ hr {
 
 .container {
   width: 500%;
-  transition-duration: 3s;
+  transition-duration: .5s;
 }
 
 .slide div {
@@ -174,4 +182,8 @@ hr {
 .slide3{
   background-image: url(http://www.astromeridian.ru/assets/images/sonnik/yagodu.jpg);
   background-size: cover;
+}
+
+.h-1{
+  margin-top: -25px;
 }
