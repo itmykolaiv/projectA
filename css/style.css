@@ -1,5 +1,15 @@
-header{
-  margin-left: 70px;
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 18px;
+}
+.page {
+  min-width: 400px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .dws-menu{
@@ -10,21 +20,34 @@ header{
 .dws-menu ul,
 .dws-menu ol{
   list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
 }
 
-.dws-menu ul{
-  display: flex;
-  justify-content: center;
+.dws-menu ul::after, .page::after, #slider::after  {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dws-menu ul li.logo {
+  padding-top: 0;
+}
+
+.dws-menu ul li{
+  float: left;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .dws-menu > ul li a{
-display: block;
-padding: 60;
-font-size: 34px;
-color: #000;
-text-decoration: none;
-text-transform: uppercase;
-transition: all 1s ease;
+  display: block;
+  padding: 10px;
+  font-size: 28px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .dws-menu > ul li{
@@ -42,9 +65,13 @@ transition: all 1s ease;
 }
 
 .dws-menu li a:hover{
-  background: #236d29;
-  box-shadow: 1px 5px 10px -5px black;
-  transition: all 1s ease;
+  background: #53d78b;
+  box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.6);
+}
+
+.dws-menu li a{
+  box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0);
+  transition-duration: 0.4s;
 }
 
 .dws-menu li ul{
@@ -61,11 +88,11 @@ transition: all 1s ease;
   padding: 25px;
   text-transform: none;
   background: #4aa552;
+  
 }
 
 .dws-menu li:hover > ul{
   display: block;
-  margin-left: -50px;
 }
 
 .sbs{
@@ -73,14 +100,6 @@ transition: all 1s ease;
   margin-top: 0px;
   color: #fff;
   font-size: 85px;
-}
-
-.home{
-  /*background-image: url(http://dryerebakan.com/wp-content/uploads/Foods-that-turn-back-the-clock.jpg);
-  background-size: cover;*/
-  height: 600px;  
-  width: 100%;
-  margin-top: 0px;
 }
 
 hr {
@@ -99,41 +118,22 @@ hr {
  margin-top: 125px;
 }
 
-.hth{
-  margin-top: 100px;
-  margin-left: 850px;
-  font-size: 85px;
-}
-
 #oml{
-  width: 800px;
-  height: 4s00px;
+  width: 200px;
   transform: rotate(-25deg);
-  margin-left: 200px;
-  margin-top: -400px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 50px;
 }
 
-#img{
-  width: 225px;
-  height: 225px;
-  margin-left: -200px;
-  
-}
 
-.tex{
-  width: 900px;
-  font-size: 65px;
-  margin-left: 1200px;
-}
-
-.h-1{
-  margin-top: -25px;
+.text {
+  font-size: 24px;
 }
 
 #slider {
   overflow: hidden;
   width: 100%;
-  height:700px;
 }
 
 .container {
@@ -141,24 +141,28 @@ hr {
   transition-duration: 3s;
 }
 
-.slide div {
+.slide > div {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .slide {
   float:left;
   width: 20%;
-  height:700px;
+  min-height:400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .slide .text {
-  position: absolute;
-  font-size: 45px;
-  top: 50%;
   width:100%;
-  height: 700px;
   text-align: center;
   color: white;
+  flex: none;
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
 }
 
 .slide1{
@@ -174,4 +178,15 @@ hr {
 .slide3{
   background-image: url(http://www.astromeridian.ru/assets/images/sonnik/yagodu.jpg);
   background-size: cover;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.img {
+  float: left;
+  margin-right: 10px;
 }
