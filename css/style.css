@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Amatic SC', cursive;
-  font-size: 18px;
+  font-size: 22px;
 }
 .page {
   min-width: 400px;
@@ -38,7 +38,7 @@ body {
 .dws-menu ul li{
   float: left;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .dws-menu > ul li a{
@@ -140,8 +140,12 @@ hr {
   width: 500%;
   transition-duration: 3s;
 }
-
-.slide > div {
+.parallax  .slide, .parallax-1  .slide {
+  float: none;
+  width: auto;
+  min-height: 300px;
+}
+.slide > div, .parallax  .slide, .parallax-1  .slide {
   position: relative;
   display: flex;
   align-items: center;
@@ -161,7 +165,7 @@ hr {
   text-align: center;
   color: white;
   flex: none;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.7);
   padding: 20px;
 }
 
@@ -180,6 +184,24 @@ hr {
   background-size: cover;
 }
 
+.slide4{
+  background-image: url(../img/OIH9800.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide5{
+  background-image: url(../img/OIH99R0.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide6{
+  background-image: url(../img/OIH9830.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
 .clear::after {
   content: "";
   display: block;
@@ -189,4 +211,121 @@ hr {
 .img {
   float: left;
   margin-right: 10px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("http://article.images.consumerreports.org/prod/content/dam/cro/news_articles/health/CR-Health-Crop-Food-Child-10-16");
+
+    /* Set a specific height */
+    min-height: 300px; 
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-1 { 
+    /* The image used */
+    background-image: url(../img/diet-1324036.jpg);
+
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parag {
+  text-align: center;
+  color:greenyellow;
+  font-size: 60px;
+}
+
+.row::after, #list::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.columns-2 {
+  float: left;
+  width: 50%;
+}
+.columns-3 {
+  float: left;
+  width: 33.33%;
+}
+
+.columns-3 p {
+  padding: 10px;
+}
+
+.columns-3 h1 {
+  text-align: center;
+}
+.columns-3 li {
+  font-size: 26px;
+}
+
+span.count {
+    /* padding: 20px; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+span.pink {
+  background-color: #ff69b4;
+}
+span.blue {
+  background-color: #89cff0;
+}
+span.grey {
+  background-color: #575654;
+}    
+
+img.rounded {
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.product {
+  float: left;
+  width: 30%;
+  text-align: center;
+  border: 1px solid gainsboro;
+  margin: 5px;
+  padding: 10px;
+}
+
+#template {
+  display: none;
+}
+
+select {
+  padding: 10px;
+  width: 200px;
+}
+
+input[type="button"] {
+    background: #53d78b;
+    border: none;
+    padding: 20px;
+    transition-duration: .3s;
+}
+input[type="button"]:hover {
+  box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
 }
