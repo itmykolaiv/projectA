@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 18px;
+}
+.page {
+  min-width: 400px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dws-menu{
+  margin-top:0px;
+  padding: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+}
+
+.dws-menu ul::after, .page::after, #slider::after  {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dws-menu ul li.logo {
+  padding-top: 0;
+}
+
+.dws-menu ul li{
+  float: left;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.dws-menu > ul li a{
+  display: block;
+  padding: 10px;
+  font-size: 28px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dws-menu > ul li{
+  position: relative;
+  font-size: 15px;
+  
+}
+
+.dws-menu > ul li:first-child{
+  
+}
+
+.dws-menu > ul li:last-child{
+  
+}
+
+.dws-menu li a:hover{
+  background: #53d78b;
+  box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.6);
+}
+
+.dws-menu li a{
+  box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0);
+  transition-duration: 0.4s;
+}
+
+.dws-menu li ul{
+  position: absolute;
+  min-width: 150px;
+  display: none;
+}
+
+.dws-menu li > ul li{
+  
+}
+
+.dws-menu li > ul li a{
+  padding: 25px;
+  text-transform: none;
+  background: #4aa552;
+  
+}
+
+.dws-menu li:hover > ul{
+  display: block;
+}
+.sbs{
+  text-align: center;
+  margin-top: 0px;
+  color: #fff;
+  font-size: 85px;
+}
+
+hr {
+    border: none;
+    width: 600px; 
+    background-color: #fff; 
+    color: #fff;
+    height: 5px; 
+    margin-left: 100px;
+}
+
+.line  {
+ border-top: 7px dashed #fff; /* Параметры линии */
+ height: 15px; /* Высота блока */
+ background: url(images/scissors.png) no-repeat 10px -18px; /* Параметры фона */
+ margin-top: 125px;
+}
+
+#oml{
+  width: 200px;
+  transform: rotate(-25deg);
+  float: left;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+
+.text {
+  font-size: 24px;
+}
+
+#slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.container {
+  width: 500%;
+  transition-duration: 5s;
+}
+
+.slide > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slide {
+  float:left;
+  width: 20%;
+  min-height:400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.slide .text {
+  width:100%;
+  text-align: center;
+  color: white;
+  flex: none;
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+}
+
+.slide1{
+  background-image: url(http://dryerebakan.com/wp-content/uploads/Foods-that-turn-back-the-clock.jpg);
+  background-size: cover;
+}
+
+.slide2{
+  background-image: url(http://travellife.com.ua/wp-content/uploads/2013/06/lesnyie-yagodyi.jpg);
+  background-size: cover;
+}
+
+.slide3{
+  background-image: url(http://www.astromeridian.ru/assets/images/sonnik/yagodu.jpg);
+  background-size: cover;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.img {
+  float: left;
+  margin-right: 10px;
+}
+.parag{
+  text-align: centre;
+  color:greenyellow;
+  font-size: 100px;
+  margin-left:50%;
+}
+.line{
+   border-bottom:1px; /* Убираем границу */
+    background-color: greenyellow; /* Цвет линии */
+    color: greenyellow; /* Цвет линии для IE6-7 */
+    height: 20px; /* Толщина линии */
+    width: 1650px;
+    margin-left: -330px;
+    margin-top:30px;
+ }
+ .por{
+  font-size:40px;
+  color:lawngreen;
+  margin-top: 10px;
+  padding: 10 100;
+ }
+ .parallax { 
+    /* The image used */
+    background-image: url("http://article.images.consumerreports.org/prod/content/dam/cro/news_articles/health/CR-Health-Crop-Food-Child-10-16");
+
+    /* Set a specific height */
+    height: 500px; 
+width: 1650px;
+margin-left:-330px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parag-1{
+  text-align: centre;
+  color:greenyellow;
+  font-size: 100px;
+  margin-left:50%;
+  margin-top:150px
+}
+td{
+ font-size: 100px;
+}
+table{
+  margin-left:10%;
+}
+.list{
+  font-size: 50px;
+}
+#slider1 {
+  overflow: hidden;
+  width: 1660px;
+  margin-left:-330px;
+}
+
+.container {
+  width: 500%;
+  transition-duration: 5s;
+}
+
+.slide > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slide {
+  float:left;
+  width: 20%;
+  min-height:400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.slide .text {
+  width:100%;
+  text-align: center;
+  color: white;
+  flex: none;
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+}
+
+.slide1-1{
+  background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=d100181690&view=fimg&th=15cab6b1dc96bb2b&attid=0.1&disp=inline&realattid=f_j3ybd0r20&safe=1&attbid=ANGjdJ8MOObI4iN8rP1BPw-KsHMjyt4pFmKrKaYs0D7v2dUX5A5vkUBoEJ-Hv6ESwjrsHqebkvnH4yzfT5GrsIS3hNFkeUtvW810tFsyReJ8EOj1_2NV_wHqTrEupHM&ats=1498290345365&rm=15cab6b1dc96bb2b&zw&sz=w1366-h589);
+  background-size: cover;
+}
+
+.slide2-1{
+  background-image: url(http://travellife.com.ua/wp-content/uploads/2013/06/lesnyie-yagodyi.jpg);
+  background-size: cover;
+}
+
+.slide3-1{
+  background-image: url(http://www.astromeridian.ru/assets/images/sonnik/yagodu.jpg);
+  background-size: cover;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both; 
+}
+   .okno{
+     margin-top: -520px;
+    margin-left: 416px;
+}
+
+    #menuVertical ul{
+        display:block;
+        width:150px;
+        margin:0px;
+        padding:0px;
+        list-style:none;
+        position:relative;
+    }
+        #menuVertical ul li{display:block; position:relative;}
+            #menuVertical ul li a{
+                position:relative;
+                display:block;
+                box-sizing:border-box;
+                font-size:40px;
+                text-transform:uppercase;
+                font-weight:bold;
+                color:#FBF7F7;
+                line-height:1.2em;
+                padding:40px 45px;
+                background:greenyellow;
+                border-top:1px solid greenyellow;
+                text-decoration:none;
+                border: 1px solid #fff;
+            }
+            #menuVertical ul  li:first-child a{border:0px;}
+            #menuVertical ul li a:hover, #menuVertical ul li:hover a{
+                background:greenyellow;
+                border: 1px solid #fff;
+            }
+            #menuVertical ul li ul{
+                position:absolute;
+                top:0px;
+                left:150px;
+                display:none;
+                width:auto;
+                font-size: 35px;
+            }
+            /*******показываем выпадашку при наведении ********/
+            #menuVertical ul li:hover ul{display:block;}
+                #menuVertical ul li ul li a{
+                    white-space:nowrap;
+                    text-transform:none;
+                    padding:35px 40px;
+                }
+                    #menuVertical ul li ul li a:hover{
+                        background:lightgray;
+                        color:black;
+                    }
+.parag-2{
+  text-align: centre;
+  color:greenyellow;
+  font-size: 100px;
+  margin-left:50%;
+  margin-top:120px;
+}
+.vodichka{
+  width:600px;
+height:516px;
+}
+.parallax-1 { 
+    /* The image used */
+    background-image: url("http://article.images.consumerreports.org/prod/content/dam/cro/news_articles/health/CR-Health-Crop-Food-Child-10-16");
+
+    /* Set a specific height */
+    height: 500px; 
+width: 1650px;
+margin-left:-330px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.line3{
+  border-bottom:1px; /* Убираем границу */
+    background-color: greenyellow; /* Цвет линии */
+    color: greenyellow; /* Цвет линии для IE6-7 */
+    height: 20px; /* Толщина линии */
+    width: 1650px;
+    margin-left: -330px;
+    
+}

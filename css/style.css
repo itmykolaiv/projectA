@@ -64,12 +64,12 @@ body {
   
 }
 
-.dws-menu li a:hover{
+.dws-menu li a:hover, .active {
   background: #53d78b;
   box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.6);
 }
 
-.dws-menu li a{
+.dws-menu li a, .active{
   box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0);
   transition-duration: 0.4s;
 }

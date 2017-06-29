@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/calories.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="dws-menu">
+            <ul>
+          <li class="logo"><img id="img" width="128" src="logo.png"></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="weight_problems.html">Weight Problems</a></li>
+          <li><a href="food&water.html">Food & Water</a></li>
+          <li><a href="sport.html">Sport & Activity</a></li>
+          <li><a class="active" href="calories.html">Calories ounter</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="home">
+        <div id="slider">
+            <div class="container">
+                <div class="slide slide1">
+                    <div>
+                        <div class="text">
+                            <h1>Calories Counter</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div>
+                        <div class="text">
+                            <h1>Calories Counter</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div>
+                        <div class="text">
+                            <h1>Calories Counter</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="fc">
+            <h1 class="h1">TIME :</h1>
+            <select name="" id="time">
+                <option class="opt" value="15">15 минут</option>
+                <option class="opt" value="30">30 минут</option>
+                <option class="opt" value="45">45 минут</option>
+                <option class="opt" value="60">1 час</option>
+                <option class="opt" value="90">1 час 30 минут</option>
+            </select>
+            <br><br>
+            <h1 class="h1">ACTIVITY :</h1>
+            <select name="" id="activity">
+                <option class="opt" value="8">бег</option>
+                <option class="opt" value="7">футбол</option>
+                <option class="opt" value="5">ходьба</option>
+                <option class="opt" value="6">танцы</option>
+                <option class="opt" value="2">шопинг</option>
+            </select>
+            <br><br><br>
+            <input id="filter-btn" type="button" value="Что съесть?" />
+        </form>
+        <div id="template">
+            <div class="product">
+                <div class="product_description">
+                    <h1>съеште {{name}} ({{count}})</h1>
+                    <h2>{{brand}}</h2>
+                    <p>{{description}}</p>
+                </div>
+                <div class="product_image">
+                    <img src="{{image}}" />
+                </div>
+            </div>
+        </div>
+        <div id="list"></div>
+        <script>
+            var products = [
+                {
+                    name: "Кит-Кат",
+                    description: "100г",
+                    image: "http://edanadom.lg.ua/files/katalog/12715_pic.jpeg",
+                    brand: 500
+                },
+                {
+                    name: "Чупо-чупс",
+                    description: "100г",
+                    image: "http://produktis.ru/files/products/3157899_1H.jpg",
+                    brand: 100
+                },
+                {
+                    name: "Шоколадный Кекс",
+                    description: "100г",
+                    image: "http://i019.radikal.ru/1309/ef/596baf069c69.png",
+                    brand: 300
+                },
+                {
+                    name: "Шоколад Милка",
+                    description: "100г",
+                    image: "http://samgurman.com/wp-content/uploads/2015/04/milka-dark-chocolate-100g.png",
+                    brand: 400
+                },
+                {
+                    name: "Пончик",
+                    description: "100г",
+                    image: "http://ramki-photoshop.ru/eda/eda9.png",
+                    brand: 200
+                },
+            ];
+
+            var template = document.querySelector('#template');
+            var list = document.querySelector('#list');
+
+            document.querySelector('#filter-btn').addEventListener('click', function () {
+                var time = document.querySelector('#time').value;
+                var activity = document.querySelector('#activity').value;
+                var kkal = time * activity;
+                list.innerHTML = "";
+                var products_filtered = filterProducts(kkal, products)
+
+                products_filtered.forEach(function (element) {
+                    element.count = 1;
+                    var count = parseInt(kkal / element.brand);
+                    if (count > 1) {
+                        element.count = count;
+                    }
+                    var block = template.innerHTML;
+                    block = block.replace(/{{([a-z]+)}}/g, function (str, offset, s) {
+                        return element[offset];
+                    })
+                    /* block = block.replace("{{name}}", element.name)
+                         .replace("{{image}}", element.image)
+                         .replace("{{description}}", element.description);*/
+                    list.innerHTML += block;
+                });
+            });
+
+            function filterProducts(kkal, products) {
+                var filtered_products = products.filter(function (element) {
+                    //var colors = ["yellow","brown"];
+                    if (element.brand < kkal) {
+                        return true;
+                    }
+                });
+                return filtered_products;
+            }
+
+            function filterProductsByOccupation(occupations, products) {
+                var filtered_products = products.filter(function (element) {
+                    //var occupation = ["yellow","brown"];
+                    if (occupation.indexOf(element.occupation) !== -1) {
+                        return true;
+                    }
+                });
+                return filtered_products;
+            }
+        </script>
+        <script src="js/slider.js"></script>
+</body>
+
+</html>
